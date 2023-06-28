@@ -28,6 +28,7 @@ header {
     width: 100%;
     background: #244D61;
     z-index: 3;
+    box-shadow: rgba(0,0,0,.7) 0 5px 10px;
 }
 
 .flex {
@@ -196,3 +197,57 @@ section .card p {
 .about ul li {
     list-style: square;
 }
+
+/* Contact */
+
+.contact .row {
+    justify-content: space-between;
+    margin: 60px 0 90px;
+}
+
+.contact .row .col {
+    padding: 0 10px;
+    width: calc(100% / 2 - 50px);
+}
+
+.contact .row .col p {
+    color: #021722;
+    margin-bottom: 10px;
+}
+
+.contact .row .col p i {
+    margin-right: 10px;
+}
+
+.contact form input {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    border: 2px solid #244D61;
+}
+
+.contact form textarea {
+    padding: 15px;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    resize: none;
+    border: 2px solid #244D61;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #EAEBED;
+    background: #021722;
+    margin-top: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: #06405f;
+}
+
