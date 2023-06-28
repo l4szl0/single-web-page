@@ -14,12 +14,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Header */
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: #244D61;
+    z-index: 3;
 }
 
 .flex {
@@ -52,4 +55,60 @@ header {
 
 .nav-links {
     gap: 25px;
+}
+
+/* Home Page */
+
+.homepage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(./images/home-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.homepage::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.4);
+}
+
+.homepage .content {
+    position: relative;
+    height: 85%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homepage .text {
+    color: #EAEBED;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.homepage .text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.homepage a {
+    color: #244D61;
+    background: #EAEBED;
+    padding: 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 3px solid #EAEBED;
+    box-shadow: rgba(0,0,0,.3) 0 5px 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.homepage a:hover {
+    color: #EAEBED;
+    background: rgba(255,255,255,.3);
 }
