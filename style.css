@@ -251,3 +251,14 @@ section .card p {
     background: #06405f;
 }
 
+/* Footer */
+.footer {
+    background: #244D61;
+    padding: 20px 0;
+    
+}
+
+.footer span {
+    color: #EAEBED;
+}
+
