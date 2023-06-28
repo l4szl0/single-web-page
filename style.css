@@ -13,3 +13,43 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #244D61;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #EAEBED;
+    text-transform: capitalize;
+    padding: 20px 0;
+    display: inline-block;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #75E2FF;
+}
+
+.nav-links {
+    gap: 25px;
+}
